@@ -1,0 +1,37 @@
+.flip-container {
+  position: relative;
+  height: 200px;
+
+  /* flip settings - tweak as you wish */
+  -webkit-perspective: 1200px;
+      -ms-perspective: 1200px;
+          perspective: 1200px;
+}
+
+.flip {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 350px;
+  height: 200px;
+  margin-left: -175px;
+  padding: 0 10px;
+  visibility: hidden;  /* using `visibility` here since e.g. `display: none` won't work well with transforms */
+  background: #005ecb;
+  text-align: left;
+  border: 5px black solid;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  /* flip settings - tweak as you wish */
+  -webkit-transition: transform 500ms linear;
+          transition: transform 500ms linear;
+  -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.flip:first-child {
+  visibility: visible;
+}

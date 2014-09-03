@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flip.js Example</title>
+    <link rel="stylesheet" href="flip-styles.css">
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flip.js Example</h1>
+
+    <div class="js-flip-container flip-container">
+      <div class="js-flip flip">
+        <h2>Flip #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="js-flip flip">
+        <h2>Flip #2</h2>
+        <p>Could serve as "back side".</p>
+      </div>
+    </div>
+
+    <script src="flip.js"></script>
+    <script>
+      Flip.DEBUG = false;  // set to `true` for console.logs
+      new Flip(true, false);
+    </script>
+  </body>
+</html>
